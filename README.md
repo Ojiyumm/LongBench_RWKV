@@ -113,6 +113,8 @@ python eval.py --model rwkv_6_7b_v2
 ```
 You can get the evaluation results on all datasets in `result.json`. The average score of the model over different length intervals in all LongBench-E datasets can be obtained with the `--e` command.
 
+You can change model to rwkv_5_v2_7b to evaluate rwkv5 7b.
+
 Please note that in `config/`, we provide the input format suitable for each dataset and the maximum output length. Feel free to modify them to better suit the model you want to evaluate. After modification, when evaluating with [pred.py](pred.py), the data will be automatically organized according to the new format to get the corresponding model output.
 
 In addition we provide the code for the long context compression evaluation based on retrieval and summarization (see Section 4.2 in the LongBench paper for the implementation details) in the folders `retrieval/` and `summ/`, respectively.
