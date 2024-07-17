@@ -1,0 +1,15 @@
+{
+    "narrativeqa": 6.4,
+    "repobench-p": 41.92,
+    "multifieldqa_en": 22.51,
+    "hotpotqa": 8.8,
+    "multi_news": 23.15,
+    "2wikimqa": 8.31,
+    "gov_report": 19.76,
+    "musique": 4.35,
+    "qasper": 8.88,
+    "lcc": 40.78,
+    "multifieldqa_zh": 19.73,
+    "dureader": 18.15,
+    "qmsum": 21.65
+}
