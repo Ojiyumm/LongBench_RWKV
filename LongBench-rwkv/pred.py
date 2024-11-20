@@ -154,8 +154,8 @@ def load_model_and_tokenizer(path, model_name, device):
         tokenizer = AutoTokenizer.from_pretrained("/home/rwkv/Peter/hf_models/RWKV_v5-EagleX-v2-7B-HF", trust_remote_code=True)  
     elif "rwkv_6_v2_7b" in model_name:
        
-        model = AutoModelForCausalLM.from_pretrained("/home/rwkv/Peter/hf_models/Qwen_Qwen2-7B-Instruct",torch_dtype=torch.float16,device_map="auto",trust_remote_code=True).to(device)
-        tokenizer = AutoTokenizer.from_pretrained("/home/rwkv/Peter/hf_models/Qwen_Qwen2-7B-Instruct",trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained("RWKV/v6-Finch-7B-HF",torch_dtype=torch.float16,device_map="auto",trust_remote_code=True).to(device)
+        tokenizer = AutoTokenizer.from_pretrained("RWKV/v6-Finch-7B-HF",trust_remote_code=True)
     elif "longchat" in model_name or "vicuna" in model_name:
         from fastchat.model import load_model
         replace_llama_attn_with_flash_attn()
